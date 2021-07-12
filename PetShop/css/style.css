@@ -22,9 +22,8 @@ body {
 
 .bar {
   height: 20px;
-  background-color: var(--black);
   display: flex;
-  font: var(--body);
+  background-color: var(--black);
   color: var(--white);
   padding-inline-start: 90px;
   padding-inline-end: 40px;
@@ -34,6 +33,7 @@ body {
 
 .bar p {
   margin: 0;
+  font: var(--body);
 }
 
 .bar-options select {
