@@ -1,0 +1,105 @@
+:root {
+  --fontBase: "Times New Roman", Times, serif;
+  --headline1: bold 35px/30px var(--fontBase);
+  --headline2: bold 20px/84.69% var(--fontBase);
+  --body: 15px/13px var(--fontBase);
+  --bodyBold: bold 15px/13px var(--fontBase);
+  --lightBlue: #e5e5e5;
+  --navyBlue: #c4c4c4;
+  --colorTitle: #005677;
+  --white: #fff;
+}
+
+body {
+  font-family: var(--fontBase);
+  margin: 0;
+}
+
+header {
+  background-color: #e5e5e5;
+  text-align: center;
+}
+
+header img {
+  padding-block-start: 12px;
+  padding-block-end: 12px;
+}
+
+h1 {
+  font: var(--headline1);
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 10px;
+  color: #005677;
+  background-color: #c4c4c4;
+  margin: 0;
+  padding: 20px;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+}
+
+main h3 {
+  font: var(--headline2);
+  color: #005677;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  background-color: #c4c4c4;
+  padding: 7px 9px;
+}
+
+section {
+  max-width: 70%;
+}
+
+.article-description {
+  font: var(--body);
+}
+
+.lista {
+  font-weight: bold;
+  font-style: italic;
+}
+
+.lista span {
+  font-weight: normal;
+  font-style: normal;
+}
+
+blockquote {
+  display: flex;
+}
+
+.lista-block {
+  font: var(--bodyBold);
+}
+
+blockquote p {
+  margin: 0;
+  padding-block-end: 5px;
+  padding-inline-start: 5px;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  background-color: var(--colorTitle);
+  color: var(--white);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 11px 0;
+}
+
+footer h3 {
+  padding: 0;
+  margin: 10px 0;
+  margin: 0;
+}
+
+footer a {
+  padding-left: 26px;
+  display: flex;
+}
