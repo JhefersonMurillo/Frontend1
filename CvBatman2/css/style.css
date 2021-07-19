@@ -1,0 +1,13 @@
+.hero {
+  background-image: url(../img/pexels-roberto-nickson-2559941.jpg);
+  height: 300px;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  text-align: center;
+}
+
+.hero img {
+  margin-top: 50px;
+}

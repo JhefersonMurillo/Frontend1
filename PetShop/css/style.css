@@ -11,6 +11,7 @@
   --brown: #3c2313;
   --black: #222;
   --gray: #666666;
+  --grayDark: #8a8787;
   --black: #000;
   --buttonHover: #f09630;
 }
@@ -18,6 +19,7 @@
 body {
   margin: 0;
   font-family: var(--fontBase);
+  box-sizing: border-box;
 }
 
 .bar {
@@ -183,4 +185,72 @@ p {
 
 .toy-description p {
   color: var(--yellow);
+}
+
+/* --------SECTION FORMULARIO----------- */
+
+.form {
+  display: flex;
+  justify-content: center;
+}
+
+.form h2 {
+  font-size: 25px;
+  color: var(--brown);
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  width: 340px;
+  align-items: center;
+}
+
+.form-container input {
+  width: 100%;
+  height: 40px;
+  margin-block-end: 10px;
+  border: none;
+  border-radius: 15px;
+  background-color: var(--brown);
+  color: var(--white);
+  font: var(--body);
+  padding-inline-start: 15px;
+}
+
+.form-container input::placeholder {
+  font-size: var(--body);
+  color: var(--white);
+}
+
+.form-container-button {
+  margin-block-start: 40px;
+  text-align: center;
+}
+
+.form-container-button button {
+  width: 110px;
+  height: 34px;
+  border: none;
+  border-radius: 15px;
+  color: var(--white);
+}
+
+.button-reset {
+  background-color: var(--grayDark);
+  margin-right: 6px;
+}
+
+.button-send {
+  background-color: var(--yellow);
+}
+
+.button-reset:hover {
+  cursor: pointer;
+  background-color: #696565;
+}
+
+.button-send:hover {
+  cursor: pointer;
+  background-color: var(--buttonHover);
 }

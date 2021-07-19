@@ -1,0 +1,9 @@
+.hero {
+  background-color: rgba(0, 0, 0, 0.8);
+  background-image: url("../img/lemon-pie\ 1.jpg");
+  height: 400px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* filter: brightness(0.5); */
+  background-attachment: fixed;
+}
