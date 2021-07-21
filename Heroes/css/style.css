@@ -1,0 +1,96 @@
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
+}
+
+header p {
+  background-color: #1cd1b0;
+  margin: 0;
+  font-size: 15px;
+  padding: 15px;
+}
+
+header h1 {
+  font-size: 40px;
+  background-color: #00669f;
+  margin: 0;
+  padding: 28px 0 28px 26px;
+  box-shadow: 0px 10px 7px rgba(0, 0, 0, 0.25);
+}
+
+section {
+  display: flex;
+  gap: 30px;
+  margin: 154px 0 151px 0;
+  justify-content: center;
+}
+
+.container-card {
+  margin: 0;
+  position: relative;
+  width: 300px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.container-card img {
+  display: block;
+}
+
+.card-profile {
+  position: absolute;
+  border-radius: 50%;
+  z-index: 10;
+  top: 128px;
+  left: 90px;
+}
+
+.card-description {
+  background-color: #f3f3f3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card-description h2 {
+  margin: 0;
+  padding: 72px 0 10px 0;
+  font-size: 30px;
+  font-weight: 400;
+}
+.hero {
+  text-transform: uppercase;
+}
+.harley {
+  text-transform: capitalize;
+}
+
+.card-description p {
+  margin: 0;
+  padding: 0 17px 0 16px;
+  font-size: 16px;
+}
+
+.card-description button {
+  font-size: 15px;
+  padding: 15px 36px;
+  background-color: #00669f;
+  color: #fff;
+  border: none;
+  margin: 37px 0 18px 0;
+}
+
+.card-description button:hover {
+  cursor: pointer;
+  background-color: #05517e;
+}
+
+footer p {
+  margin: 0;
+}
+
+footer {
+  background-color: #00669f;
+  color: #fff;
+  padding: 16px;
+}
