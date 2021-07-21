@@ -57,7 +57,9 @@ section {
 
 .card-description {
   background-color: #f3f3f3;
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .card-description h2 {
