@@ -1,0 +1,28 @@
+body {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.card {
+  position: relative;
+  width: 300px;
+}
+
+.hero-card {
+  display: block;
+}
+
+.profile-card {
+  position: absolute;
+  border-radius: 50%;
+  left: 90px;
+  top: 128px;
+}
+
+.title-card {
+  background-color: orange;
+}
+
+.title-card h2 {
+  margin: 0;
+}

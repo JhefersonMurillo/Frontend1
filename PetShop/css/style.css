@@ -81,6 +81,9 @@ body {
 }
 
 /* --------SECTION HERO----------- */
+.hero img {
+  width: 100%;
+}
 
 .hero {
   position: relative;
