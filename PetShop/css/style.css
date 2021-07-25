@@ -9,17 +9,20 @@
   --white: #fff;
   --yellow: #f0a83e;
   --brown: #3c2313;
-  --black: #222;
+  --blackl: #222;
   --gray: #666666;
   --grayDark: #8a8787;
   --black: #000;
   --buttonHover: #f09630;
 }
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
 body {
-  margin: 0;
   font-family: var(--fontBase);
-  box-sizing: border-box;
 }
 
 .bar {
@@ -99,6 +102,7 @@ body {
   align-items: center;
   color: var(--brown);
   padding-inline-end: 20px;
+  gap: 12px;
 }
 
 .hero-title h2 {
@@ -179,7 +183,7 @@ body {
 }
 
 .toy-description h4,
-p {
+.toy-description p {
   text-align: center;
   margin: 0;
   font: var(--headline4);
@@ -200,6 +204,7 @@ p {
 .form h2 {
   font-size: 25px;
   color: var(--brown);
+  margin-bottom: 20px;
 }
 
 .form-container {
@@ -256,4 +261,100 @@ p {
 .button-send:hover {
   cursor: pointer;
   background-color: var(--buttonHover);
+}
+
+/* ===================FOOTER=========== */
+footer {
+  margin-top: 75px;
+}
+.footer-mail {
+  display: flex;
+  height: 60px;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--yellow);
+  padding: 10px 47px 10px 23px;
+}
+
+.footer-mail-left {
+  display: flex;
+  align-items: center;
+}
+
+.footer-mail-left h3 {
+  font-size: 20px;
+  color: var(--white);
+  font-weight: 700;
+  padding-left: 10px;
+}
+
+.footer-mail form {
+  padding: 10px 0;
+}
+
+.footer-mail-right input {
+  height: 40px;
+  width: 270px;
+  border: none;
+  border-radius: 15px;
+  padding-left: 8px;
+}
+
+.footer-mail-right button {
+  width: 70px;
+  height: 34px;
+  background-color: var(--brown);
+  color: var(--white);
+  font-size: 9px;
+  font-weight: bold;
+  border: none;
+  border-radius: 15px;
+}
+
+.footer-mail-right input::placeholder {
+  font-size: 9px;
+  color: #a0a0a0;
+}
+
+.footer-mail-right button:hover {
+  background-color: white;
+  color: var(--brown);
+  cursor: pointer;
+}
+
+.footer-contact {
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--brown);
+  padding: 23px 70px;
+}
+.footer-contact-column-left {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.footer-contact-column-left-item {
+  display: flex;
+  gap: 25px;
+}
+
+.footer-contact-column-left-item-descripcion h3 {
+  color: var(--white);
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.footer-contact-column-left-item-descripcion p {
+  color: #8a8787;
+  font-size: 10px;
+}
+
+.footer-copyright {
+  font: var(--body);
+  color: var(--white);
+  text-align: center;
+  font-weight: bold;
+  background-color: var(--blackl);
+  padding: 4px 0;
 }

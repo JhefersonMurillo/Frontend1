@@ -36,18 +36,16 @@ header h1 {
   margin: 0;
   padding: 20px;
 }
-section {
-  max-width: 80%;
-}
-
 main {
   display: flex;
   margin-block-start: 100px;
   margin-block-end: 100px;
   justify-content: center;
 }
-
-main h3 {
+section {
+  width: 70%;
+}
+main section h3 {
   font: var(--headline2);
   color: #005677;
   text-transform: uppercase;
@@ -77,6 +75,8 @@ blockquote {
 }
 
 .lista-block {
+  width: 75px;
+  display: block;
   font: var(--bodyBold);
 }
 
