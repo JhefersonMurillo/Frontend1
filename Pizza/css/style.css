@@ -1,0 +1,115 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --header: #222222;
+  --headline1: #fc200c;
+  --paragraph: #fff;
+  --backgroundMain: #e5e5e5;
+  --hoverNav: #39b24a;
+}
+
+html {
+  font-family: "Roboto", sans-serif;
+  height: 100vh;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: var(--header);
+}
+
+header nav ol {
+  display: flex;
+  gap: 13px;
+}
+
+header nav ol li {
+  list-style: none;
+  color: var(--paragraph);
+}
+.item:hover {
+  cursor: pointer;
+  color: var(--hoverNav);
+}
+/*-----------------------------------section*/
+section {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 5px;
+  background-color: var(--backgroundMain);
+  padding: 35px 20px;
+}
+
+main section article {
+  border-radius: 5px;
+}
+
+.delivery {
+  width: 490px;
+  height: 350px;
+  background-image: url("../img/fotomoto.jpg");
+  color: var(--headline1);
+  padding-inline-start: 20px;
+  padding-block-start: 20px;
+}
+.delivery h2 span {
+  color: var(--paragraph);
+}
+
+.categories {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 491px;
+  height: 350px;
+  padding: 26px 74px 60px 51px;
+  font-weight: bold;
+  font-size: 20px;
+  background-color: var(--paragraph);
+}
+
+.categories-title {
+  text-align: center;
+  color: var(--headline1);
+}
+
+.categories-products {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 16px;
+}
+
+.categories-products blockquote h2 {
+  font-size: 23px;
+}
+
+.categories-products--list li {
+  padding-top: 10px;
+}
+
+footer {
+  display: flex;
+  background-color: var(--header);
+  color: var(--paragraph);
+  justify-content: space-between;
+  padding: 20px 42px 19px 20px;
+}
+
+footer div ol {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+footer div ol li {
+  list-style: none;
+}
