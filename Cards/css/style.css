@@ -1,0 +1,171 @@
+:root {
+  --aside: #d1891c;
+  --header: #00669f;
+  --fontHeader: #ffffff;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "DM Sans", sans-serif;
+}
+
+body {
+  min-width: 320px;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  color: var(--fontHeader);
+}
+
+aside {
+  background-color: var(--aside);
+  margin: 0;
+  font-size: 1.5rem;
+  padding: 1.5rem;
+}
+
+header h1 {
+  font-size: 3rem;
+  background-color: #00669f;
+  margin: 0;
+  font-weight: 400;
+  padding: 2rem;
+  box-shadow: 0px 10px 7px rgba(0, 0, 0, 0.25);
+}
+
+section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8rem;
+  margin: 2rem;
+  justify-content: center;
+}
+
+.container-card {
+  margin: 0;
+  position: relative;
+  width: 300px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.card-hero {
+  width: 30rem;
+  height: 19.3rem;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.container-card img {
+  display: block;
+}
+
+.heart {
+  position: absolute;
+  top: 1.6rem;
+  left: 2.1rem;
+}
+
+.card-profile {
+  position: absolute;
+  width: 12rem;
+  height: 11.8rem;
+  border-radius: 50%;
+  top: 12.8rem;
+  left: 9rem;
+}
+
+.card-description {
+  display: flex;
+  height: 357px;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hero {
+  margin: 0;
+  padding: 72px 0 10px 0;
+  font-size: 2.5rem;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.card-description p {
+  margin: 0;
+  padding: 0 17px 0 16px;
+  font-size: 14px;
+}
+
+.card-description button {
+  font-size: 15px;
+  padding: 15px 36px;
+  background-color: #00669f;
+  color: #fff;
+  border: none;
+  margin: 37px 0 18px 0;
+}
+
+.card-description button:hover {
+  cursor: pointer;
+  background-color: #05517e;
+}
+.container-card.card-active {
+  display: none;
+}
+
+footer {
+  background-color: #00669f;
+  color: #fff;
+  padding: 16px;
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+footer img {
+  width: 100px;
+}
+footer p {
+  margin: 0;
+  font-size: 1.3rem;
+}
+@media screen and (min-width: 418px) {
+  footer {
+    background-color: #00669f;
+    color: #fff;
+    padding: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  footer img {
+    order: 1;
+  }
+  footer p {
+    margin: 0;
+    font-size: 1.3rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  section {
+    max-width: 70rem;
+    justify-content: space-between;
+    margin: 3rem auto;
+  }
+  .container-card.card-active {
+    display: inline-block;
+  }
+  .queen {
+    text-transform: capitalize;
+  }
+}
