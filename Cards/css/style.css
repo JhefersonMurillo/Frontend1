@@ -136,10 +136,6 @@ footer img {
   width: 10rem;
 }
 
-footer img:hover {
-  fill: orange;
-  cursor: pointer;
-}
 footer p {
   margin: 0;
   font-size: 1.3rem;
@@ -161,7 +157,7 @@ footer p {
     font-size: 1.3rem;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 720px) {
   section {
     max-width: 70rem;
     justify-content: space-between;
