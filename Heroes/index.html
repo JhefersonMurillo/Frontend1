@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="img/SVG/icons/DC.svg" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -14,15 +15,36 @@
     <title>Heroes</title>
   </head>
   <body>
+    <!-- AGREGO UN NUEVO SECCIÓN -->
     <p class="promotion">Descuentos 20%</p>
     <header>
-      <h1 class="title">Héroes</h1>
+      <a href="">
+        <img src="./img/SVG/logo.svg" alt="" />
+        <h1 class="title">Héroes</h1>
+      </a>
     </header>
+    <div class="menu">
+      <nav>
+        <ul>
+          <li>
+            <a class="item-navigator" href="./pages/contacto.html">Contacto</a>
+          </li>
+          <li>
+            <a class="item-navigator" href="./pages/registro.html"
+              >Registrarme</a
+            >
+          </li>
+          <li>
+            <a class="item-navigator" href="./pages/login.html">Ingresar</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
     <section>
       <blockquote class="container-card">
         <img src="./img/batman-header.png" alt="baticueva" />
         <img class="card-profile" src="./img/batman.png" alt="" />
-        <img class="heart" src="./img/SVG/Vector.svg" alt="Corazón" />
+        <img class="heart" src="./img/SVG/icons/DC.svg" alt="Corazón" />
         <div class="card-description">
           <h2 class="hero">batman</h2>
           <p>
@@ -30,13 +52,17 @@
             aparece en Batman, Detective Comics, Batman y Robin, y Batman: The
             Dark Knight. Dick Grayson vuelve al manto de Nightwing
           </p>
-          <button>Ver más</button>
+          <a href="./pages/pageBatman.html">Ver más</a>
         </div>
       </blockquote>
       <blockquote class="container-card">
-        <img src="./img/harley-header.png" alt="bomba de colores" />
+        <img
+          class="header-profile"
+          src="./img/hero-harley.jpg"
+          alt="bomba de colores"
+        />
         <img class="card-profile" src="./img/harley.png" alt="" />
-        <img class="heart" src="./img/SVG/Vector.svg" alt="Corazón" />
+        <img class="heart" src="./img/SVG/icons/DC.svg" alt="Corazón" />
         <div class="card-description">
           <h2 class="harley">harley quinn</h2>
           <p>
@@ -44,23 +70,29 @@
             aparece en Batman, Detective Comics, Batman y Robin, y Batman: The
             Dark Knight. Dick Grayson vuelve al manto de Nightwing
           </p>
-          <button>Ver más</button>
+          <a href="./pages/pageHarley.html">Ver más</a>
         </div>
       </blockquote>
       <blockquote class="container-card">
-        <img src="./img/batman-header.png" alt="baticueva" />
-        <img class="card-profile" src="./img/batman.png" alt="" />
-        <img class="heart" src="./img/SVG/Vector.svg" alt="Corazón" />
+        <img
+          class="header-profile"
+          src="./img/hero-zatanna.jpg"
+          alt="baticueva"
+        />
+        <img class="card-profile" src="./img/zatanna-short.jpg" alt="" />
+        <img class="heart" src="./img/SVG/icons/DC.svg" alt="Corazón" />
         <div class="card-description">
-          <h2 class="hero">batman</h2>
+          <h2 class="hero">Zatanna</h2>
           <p>
-            Bruce Wayne es el único personaje que se identifica como Batman y
-            aparece en Batman, Detective Comics, Batman y Robin, y Batman: The
-            Dark Knight. Dick Grayson vuelve al manto de Nightwing
+            Zatanna es hija de un aventurero John Zatara y su esposa Sindella, y
+            un miembro de la mística de la tribu de los brujos llaman a los
+            Ocultos o Homo Magi.Zatanna nacio el 10 de mayo, tiene un carácter
+            rebelde
           </p>
-          <button>Ver más</button>
+          <a class="asd" href="./pages/pageZatanna.html">Ver más</a>
         </div>
       </blockquote>
+      <a class="btn-create" href="./pages/CrearHeroes.html">+</a>
     </section>
     <footer>
       <p>Todos los derechos reservados a FRONT END 1</p>

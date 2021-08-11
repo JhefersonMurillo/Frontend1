@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="img/SVG/icons/DC.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/fomulario.css" />
+    <title>Heroés</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <p class="promotion">Descuentos 20%</p>
+      <header>
+        <div></div>
+        <a href="">
+          <img src="../img/SVG/logo.svg" alt="Logo" />
+          <h1 class="title">Héroes</h1>
+        </a>
+      </header>
+      <div class="menu">
+        <nav>
+          <ul>
+            <li>
+              <a class="item-navigator" href="./pages/contacto.html"
+                >Contacto</a
+              >
+            </li>
+            <li>
+              <a class="item-navigator" href="./pages/registro.html"
+                >Registrarme</a
+              >
+            </li>
+            <li>
+              <a class="item-navigator" href="./pages/login.html">Ingresar</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <main>
+        <section class="container">
+          <h2>Añade tu super!</h2>
+          <p class="title-container">
+            Agrega tu personaje favorito completando las opciones.
+          </p>
+          <form action="../index.html">
+            <div class="element1 element title">
+              <label for="name">Nombre</label>
+              <input class="input" id="name" type="text" />
+            </div>
+            <div class="element2 element title">
+              <label id="date" for="">Fecha</label>
+              <input class="input" name="date" type="date" />
+            </div>
+            <textarea
+              class="element3 input"
+              col="10"
+              rows="10"
+              placeholder="Descripcion"
+            ></textarea>
+            <div class="element4 element title">
+              <label id="specie" for="specie">Especie</label>
+              <select class="input" for="specie" name="specie">
+                <option value="1">Humano</option>
+                <option value="2">Acuático</option>
+                <option value="3">Alienigena</option>
+                <option value="4">Desconocido</option>
+                <option value="5">Anfibio</option>
+              </select>
+            </div>
+            <div class="element5 element title">
+              <label for="">Agregar foto</label>
+              <input type="file" />
+            </div>
+            <div class="element6 element">
+              <p>Poderes</p>
+              <label for="1"
+                ><input type="checkbox" name="" id="1" />Volar</label
+              >
+              <label for="2"
+                ><input
+                  type="checkbox"
+                  name=""
+                  id="2"
+                />SuperInteligencia</label
+              >
+              <label for="3">
+                <input type="checkbox" name="" id="3" />Vista de rayo
+                láser</label
+              >
+              <label for="4">
+                <input type="checkbox" name="" id="4" />Billetera Gorda</label
+              >
+              <hr />
+            </div>
+
+            <div class="element7 element">
+              <p>Tipo de personaje</p>
+              <label for=""><input type="radio" />Héroe / Heroína</label>
+              <label for=""><input type="radio" />Villano / Villana</label>
+            </div>
+            <button class="element8" type="submit">Añadir</button>
+          </form>
+        </section>
+      </main>
+      <footer>
+        <p>Todos los derechos reservados a FRONT END1</p>
+      </footer>
+    </div>
+  </body>
+</html>

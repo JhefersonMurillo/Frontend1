@@ -1,0 +1,281 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+}
+:root {
+  --blue: #00669f;
+  --white: #fff;
+  --green: #1cd1b0;
+  --grey: #001d2d;
+  --light: #f3f3f3;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  margin: 0;
+  font-family: "Inter", sans-serif;
+  box-sizing: border-box;
+}
+.wrapper {
+  min-width: 320px;
+  max-width: 1700px;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  height: 10.4rem;
+  z-index: 2;
+  background-color: var(--blue);
+  padding: 2rem 0 2rem 1.5rem;
+  box-shadow: 0px 10px 7px rgba(0, 0, 0, 0.25);
+}
+
+header a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+header a h1 {
+  color: var(--white);
+  font-weight: normal;
+  font-size: 3rem;
+}
+
+.promotion {
+  background-color: var(--green);
+  margin: 0;
+  font-size: 15px;
+  padding: 5px 0 5px 15px;
+}
+
+.menu {
+  background-color: var(--grey);
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 20px;
+  box-shadow: 0px 10px 7px rgba(0, 0, 0, 0.25);
+}
+
+.menu nav ul {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 20px;
+  list-style: none;
+  margin: 0;
+}
+
+.menu nav ul li a {
+  font-size: 16px;
+  color: var(--white);
+  text-decoration: none;
+}
+
+.item-navigator:hover {
+  color: var(--green);
+  cursor: pointer;
+}
+
+/*************************Section Principal*/
+main {
+  display: flex;
+  justify-content: center;
+}
+.container {
+  min-width: 300px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--blue);
+  color: var(--white);
+  padding: 10px;
+  border-radius: 20px;
+  margin: 30px;
+  box-shadow: 0px 10px 7px rgba(0, 0, 0, 0.25);
+}
+
+.container h2 {
+  font-size: 3.5rem;
+  text-align: center;
+  font-weight: 500;
+}
+
+.title-container {
+  font-size: 1.6rem;
+  margin-block-start: 5px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.container form {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 20px;
+  font-size: 1.6rem;
+}
+
+.element {
+  display: flex;
+  flex-direction: column;
+}
+.element6 label input,
+.element7 label input {
+  margin-right: 20px;
+}
+.element6.element hr {
+  margin-top: 30px;
+}
+.element1 input,
+.element2 input,
+.element3 input {
+  height: 50px;
+  border-radius: 15px;
+  border: none;
+}
+.element3.input {
+  height: 307px;
+  border-radius: 15px;
+  border: none;
+}
+.element4 select {
+  height: 50px;
+  border-radius: 15px;
+}
+.title label {
+  margin-bottom: 20px;
+}
+
+.input {
+  font-family: "Inter", sans-serif;
+  padding: 10px 10px;
+}
+
+.element6.element label,
+.element7.element label {
+  margin: 5px 0;
+}
+
+/***********************************Footer*/
+
+footer p {
+  margin: 0;
+  font-size: 1.3rem;
+}
+
+footer {
+  text-align: center;
+  padding: 1.55rem;
+  background-color: var(--blue);
+  color: var(--white);
+  padding: 16px;
+}
+.element8 {
+  width: 100%;
+  border-radius: 18px;
+  border: none;
+  height: 60px;
+  background-color: #1cd1b0;
+  font-size: 3rem;
+  color: black;
+  font-weight: bold;
+  padding: 10px 0;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+.element8:hover {
+  background-color: #001d2d;
+  color: var(--white);
+}
+.element6 label input,
+.element7 label input {
+  height: 20px;
+  width: 20px;
+  transform: translateY(2px);
+}
+/**************************************************MediaQueries*/
+@media screen and (min-width: 768px) {
+  .container form {
+    display: grid;
+    height: 70%;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 100px 100px 150px 150px 87px;
+    column-gap: 30px;
+    gap: 20px;
+    grid-template-areas:
+      "element1 element4"
+      "element2 element5"
+      "element3 element6"
+      "element3 element7"
+      "element8 element8";
+    font-size: 2rem;
+    margin: 15px 100px;
+  }
+  .container {
+    border-radius: 50px;
+    font-size: 2rem;
+  }
+  .container h2 {
+    font-size: 4rem;
+    font-weight: 500;
+  }
+  .element {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .element1 {
+    grid-area: element1;
+  }
+  .element2 {
+    grid-area: element2;
+  }
+  .element3 {
+    grid-area: element3;
+  }
+  .element4 {
+    grid-area: element4;
+  }
+  .element5 {
+    grid-area: element5;
+  }
+  .element6 {
+    grid-area: element6;
+  }
+  .element7 {
+    grid-area: element7;
+  }
+  .element8 {
+    grid-area: element8;
+  }
+
+  .element5.element input {
+    margin-top: 15px;
+  }
+
+  .element1 input,
+  .element2 input,
+  .element3 input {
+    width: 343px;
+  }
+  .element7.element {
+    margin-top: 50px;
+  }
+  .element8 {
+    width: 60%;
+    justify-self: center;
+    border-radius: 23px;
+    border: none;
+    background-color: #1cd1b0;
+    font-size: 4rem;
+    color: black;
+    font-weight: bold;
+  }
+}

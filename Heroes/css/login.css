@@ -1,0 +1,138 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  height: 10.4rem;
+  z-index: 2;
+  background-color: #00669f;
+  padding: 2rem 0 2rem 1.5rem;
+  box-shadow: 0px 10px 7px rgba(0, 0, 0, 0.25);
+}
+
+header a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+header a h1 {
+  color: white;
+  font-weight: normal;
+  font-size: 3rem;
+}
+
+.promotion {
+  background-color: #1cd1b0;
+  margin: 0;
+  font-size: 1.5rem;
+  padding: 0.5rem 0 0.5rem 1.5rem;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 177px);
+}
+
+.container-form {
+  display: flex;
+  min-width: 30rem;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.container-form h2 {
+  color: #333333;
+  font-size: 5.2rem;
+  margin-block-end: 1rem;
+}
+
+.container-form input,
+.container-form button {
+  height: 4rem;
+}
+
+.container-form input {
+  padding-inline-start: 0.7rem;
+}
+
+.container-form button {
+  margin-block-start: 2rem;
+  border-radius: 2.3rem;
+  font-weight: bold;
+  border: none;
+  background-color: #1fad93;
+}
+
+.container-form button:hover {
+  cursor: pointer;
+  background-color: #00669f;
+  color: white;
+}
+
+.container-form p {
+  text-align: center;
+  font-size: 1.3rem;
+}
+
+.register {
+  color: #00669f;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+footer p {
+  margin: 0;
+  font-size: 1.3rem;
+}
+
+footer {
+  text-align: center;
+  padding: 1.55rem;
+  font-size: 1.2rem;
+  background-color: #00669f;
+  color: #fff;
+}
+
+@media screen and (min-width: 768px) {
+  main {
+    height: calc(100vh - 132px);
+  }
+
+  .container-form {
+    min-width: 60rem;
+  }
+
+  .container-form h2 {
+    font-size: 7.2rem;
+  }
+
+  .container-form input {
+    font-size: 1.5rem;
+    padding: 0.5rem 0 0.5rem 2.8rem;
+  }
+
+  .container-form button {
+    font-size: 2.3rem;
+  }
+
+  .container-form p {
+    text-align: center;
+    font-size: 1.6rem;
+  }
+}
